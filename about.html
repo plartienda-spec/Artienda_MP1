@@ -1,0 +1,129 @@
+<!--
+  about.html
+  Rai Artienda (CMSC 110 - Machine Project #1)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARPHarness | About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Top Box (title card, & tab navigation)-->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="logo" href="index.html"> <img src="pics/LarpHarness.jpg" alt="pic ni larpHarness toh"></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>About LARPHarness</h1>
+      <p>
+        The aim is not to remove the effort of learning but rather allocate that effort better,
+        so more of it goes into the thinking that builds real understanding.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Idea & Philosophy</h2>
+      <p>
+        <b>LearnHarness</b> was created by <b>Amos Blomqvist</b> as an open-source
+        agent harness for learning (now over 9.7k stars on GitHub). The best explanations and practice problems
+        depend on both <em>what</em> you already understand and <em>how</em> you reason about it.
+      </p>
+      <p>
+        Our coursework showcase <strong>LARPHarness</strong> highlights that workflow: agents probe your
+        current mental model, plan a minimal dependency tree, teach one step at a time (predict &rarr; teach &rarr;
+        check),
+        and extract propositions into one persistent graph shared across sessions.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Core Agent Loop</h2>
+
+      
+      <div class="blockZ-grid">
+        <!--Probe & Plan-->
+        <article class="blockZ">
+          <h3>Probe & Plan</h3>
+          <p>Finds where your understanding ends and builds a minimal lesson map from known concepts to your goal.</p>
+        </article>
+        <!--Teach-->
+        <article class="blockZ">
+          <h3>Predict, Teach, Check</h3>
+          <p>You predict the next move before seeing the explanation, surfacing errors immediately while subagents
+            fact-check or build demos.</p>
+        </article>
+        <!--Graph-->
+        <article class="blockZ">
+          <h3>Shared Context Graph</h3>
+          <p>Propositions and reasoning chains stay saved locally so future teaching and practice sessions build on
+            prior work.</p>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <h2>Creator & Open-Source Terms</h2>
+      <div class="blockZ-grid">
+        <article class="blockZ">
+          <h3>Creator & License</h3>
+          <p>
+            <strong>Amos Blomqvist</strong> - Free, open-source desktop app under the <strong>AGPL-3.0</strong>
+            license with editable system prompts and zero LearnHarness subscription or usage markup.
+          </p>
+        </article>
+        <article class="blockZ">
+          <h3>Platforms & AI Providers</h3>
+          <ul>
+            <li>Desktop app for <strong>macOS, Windows, and Linux</strong></li>
+            <li>Use your own API keys or connect ChatGPT, GitHub Copilot, Grok, Claude Code CLI, or custom
+              OpenAI-compatible endpoints</li>
+            <li>Learning records live as local files (provider requests use your chosen AI account)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      
+      <p>
+        <b>Academic Showcase Notice:</b> while LARPHarness is a fictional business however,
+        <em>LearnHarness</em> (a free, open-source AGPL-3.0 desktop app by Amos Blomqvist).
+        Sample managed service tiers, rates, and learner reviews on this site are illustrative for CMSC 110 MP1.
+      </p>
+      <p class="footer-sources">
+        Sources:
+        <a href="https://learnharness.ai/" target="_blank" rel="noopener noreferrer">LearnHarness (learnharness.ai)</a>
+        -
+        <a href="https://github.com/amosblomqvist/learnharness" target="_blank" rel="noopener noreferrer">GitHub
+          (amosblomqvist/learnharness)</a>
+        -  
+        <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">Eero Alvar:
+          Agent Harness for Learning Things (YouTube)</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

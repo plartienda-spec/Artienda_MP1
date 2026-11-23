@@ -1,0 +1,113 @@
+<!--
+  gallery.html
+  Rai Artienda (CMSC 110 - Machine Project #1)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARPHarness | Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!--Top Box (title card, & tab navigation)-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"> <img src="pics/LarpHarness.jpg" alt="pic ni larpHarness toh"></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Media Gallery</h1>
+      <p>
+        Inside the LearnHarness desktop interface: live teaching sessions, minimal dependency lesson maps,
+        the persistent proposition graph, and the video walkthrough.
+      </p>
+
+      <div class="filterZ" role="group">
+        <button type="button" class="btn btn-primary filter-btn" data-filter="all">All (4)</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="screens">App Screens (3)</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="video">Video Walkthrough (1)</button>
+      </div>
+      <p id="gallery-count" class="muted">Showing 4 media items.</p>
+    </section>
+
+    <!--Picsss-->
+    <section class="section">
+      <div class="gallery-grid" id="gallery-grid">
+
+        <figure class="blockZ gallery-item" data-category="screens">
+          <img src="pics/teaching-session.jpg"
+            alt="LearnHarness teaching gradient descent with prediction question, confidence slider, thinking field, and lesson map">
+          <figcaption><strong>1. Teaching Session:</strong> Step-by-step explanation, prediction prompt, confidence
+            slider, and thinking field.</figcaption>
+        </figure>
+
+        <figure class="blockZ gallery-item" data-category="screens">
+          <img src="pics/lesson-map.jpg"
+            alt="LearnHarness minimal dependency tree lesson map leading from known ideas to a goal">
+          <figcaption><strong>2. Lesson Map (Plan):</strong> Minimal dependency tree built from what you already
+            understand.</figcaption>
+        </figure>
+
+        <figure class="blockZ gallery-item" data-category="screens">
+          <img src="pics/knowledge-graph.jpg"
+            alt="LearnHarness persistent knowledge graph connecting propositions and reasoning chains">
+          <figcaption><strong>3. Persistent Graph:</strong> Propositions and reasoning chains shared as context between
+            teaching and practice.</figcaption>
+        </figure>
+
+        <figure class="blockZ gallery-item" data-category="video">
+          <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">
+            <img src="pics/video-thumb.jpg" alt="YouTube thumbnail for Agent Harness for Learning Things by Eero Alvar">
+          </a>
+          <figcaption>
+            <strong>4. Video Walkthrough (YouTube):</strong>
+            <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">
+              Watch "Agent Harness for Learning Things" by Eero Alvar
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+ <p>
+        <b>Academic Showcase Notice:</b> while LARPHarness is a fictional business however,
+        <em>LearnHarness</em> (a free, open-source AGPL-3.0 desktop app by Amos Blomqvist).
+        Sample managed service tiers, rates, and learner reviews on this site are illustrative for CMSC 110 MP1.
+      </p>
+      <p class="footer-sources">
+        Sources:
+        <a href="https://learnharness.ai/" target="_blank" rel="noopener noreferrer">LearnHarness (learnharness.ai)</a>
+        -
+        <a href="https://github.com/amosblomqvist/learnharness" target="_blank" rel="noopener noreferrer">GitHub
+          (amosblomqvist/learnharness)</a>
+        -
+        <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">Eero Alvar:
+          Agent Harness for Learning Things (YouTube)</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!--
+  contact.html
+  Rai Artienda (CMSC 110 - Machine Project #1)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARPHarness | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Top Box (title card, & tab navigation)-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"> <img src="pics/LarpHarness.jpg" alt="pic ni larpHarness toh"></a>
+
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Contact & Setup Support</h1>
+      <p>
+        Need help choosing a provider endpoint, downloading for macOS/Windows/Linux, or setting up a class template?
+        Reach out below.
+      </p>
+    </section>
+
+    <!--Deets-->
+    <section class="section contact-layout">
+      <div class="blockZ">
+        <h2>Project & Support Details</h2>
+        <p><strong>Official Site:</strong> <a href="https://learnharness.ai/" target="_blank"
+            rel="noopener noreferrer">learnharness.ai</a></p>
+        <p><strong>GitHub Issues:</strong> <a href="https://github.com/amosblomqvist/learnharness/issues"
+            target="_blank" rel="noopener noreferrer">github.com/amosblomqvist/learnharness/issues</a></p>
+        <p><strong>Phone:</strong> +63 956 904 5808</p>
+        <p><strong>Location:</strong> Baguio City, Philippines</p>
+        <p><strong>Operational Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (PHT)</p>
+      </div>
+
+      <!--Querie/s-->
+      <form class="blockZ" id="contact-form" action="#" method="get">
+        <fieldset>
+          <legend>Ask About Setup or Team Onboarding</legend>
+
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="fullName" placeholder="Quandale Jacquavious Dingle" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="topic">Inquiry Type</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- Choose an option --</option>
+            <option value="setup">Desktop Setup & API Key Help</option>
+            <option value="pro">Pro Study Packs</option>
+            <option value="school">School & Team Onboarding</option>
+          </select>
+
+          <label for="message">What topic or setup do you need help with?</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="e.g., Connecting Claude Code CLI or setting up your personalized learning environment"
+            required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <p id="form-feedback" class="form-feedback" role="status"></p>
+          <noscript>
+            <p class="muted">JavaScript is off. You can open an issue on github.com/amosblomqvist/learnharness.</p>
+          </noscript>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <b>Academic Showcase Notice:</b> while LARPHarness is a fictional business however,
+        <em>LearnHarness</em> (a free, open-source AGPL-3.0 desktop app by Amos Blomqvist).
+        Sample managed service tiers, rates, and learner reviews on this site are illustrative for CMSC 110 MP1.
+      </p>
+        <p class="footer-sources">
+        Sources:
+        <a href="https://learnharness.ai/" target="_blank" rel="noopener noreferrer">LearnHarness (learnharness.ai)</a>
+        -
+        <a href="https://github.com/amosblomqvist/learnharness" target="_blank" rel="noopener noreferrer">GitHub
+          (amosblomqvist/learnharness)</a>
+        -  
+        <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">Eero Alvar:
+          Agent Harness for Learning Things (YouTube)</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

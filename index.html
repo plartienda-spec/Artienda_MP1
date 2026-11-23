@@ -1,0 +1,151 @@
+<!--
+  index.html
+  Rai Artienda (CMSC 110 - Machine Project #1)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARPHarness | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+
+    <div class="container header-inner">
+      <a class="brand" href="index.html"> <img src="pics/LarpHarness.jpg" alt="pic ni larpHarness toh"></a>
+
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="herolarp">An Agent Harness for Learning (Inspired by LearnHarness)</p>
+        <h1>Develop a strong, reusable knowledge without worrying the learning process.</h1>
+        <p>
+          "LARPHarness" showcases <strong>LearnHarness</strong> a free, open-source (AGPL-3.0) desktop app
+          for macOS, Windows, and Linux. Its agents probe where your reasoning ends, plan a minimal dependency tree,
+          and adapt teaching and practice as you learn.
+        </p>
+        <!--Call To Action-->
+        <div class="cta-row">
+          <a class="btn btn-primary" href="services.html">View Plans & Rates</a>
+          <a class="btn btn-secondary" href="contact.html">Ask About Setup</a>
+        </div>
+      </div>
+      <figure class="samp1">
+        <img src="pics/teaching-session.jpg" alt="Learn harness pic (ril)">
+        <figcaption>Teaching session preview from learnharness.ai: explanation, prediction check, and lesson map.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!--How larpharness works-->
+    <section class="section">
+      <h2>How LARPHarness Works</h2>
+      <div class="blockZ-grid">
+        <article class="blockZ">
+          <h3>1. Teaching (Probe -> Plan -> Teach)</h3>
+          <p>Agents find the edge of your understanding, map a minimal dependency tree, and teach one step at a time
+            with predict, teach, and check.</p>
+        </article>
+        <article class="blockZ">
+          <h3>2. Practice mode</h3>
+          <p>Problems target what needs strengthening and are hard enough to require real thought, giving only the
+            smallest hint when you get stuck.</p>
+        </article>
+        <article class="blockZ">
+          <h3>3. Persistent Graph</h3>
+          <p>Propositions and reasoning chains are saved locally into a compact record shared as context between
+            teaching and practice agents.</p>
+        </article>
+      </div>
+    </section>
+
+    <!--Sample-->
+    <section class="section">
+      <h2 id="quest-heading">Try Previewing a Learning Session</h2>
+      <p>Select a sample topic below to preview how the agent probes, plans, and teaches:</p>
+
+      <div class="blockZ_q">
+        <fieldset class="quest-picker">
+          <legend>Pick a topic</legend>
+          <label class="radio-row">
+            <input type="radio" name="quest-goal" value="larp" checked>
+            How do you larp
+          </label>
+          <label class="radio-row">
+            <input type="radio" name="quest-goal" value="CMSC110">
+            How to review 4 cmsc110 exam in 2 days (the knowledge is worth 1 month)
+          </label>
+          <label class="radio-row">
+            <input type="radio" name="quest-goal" value="comProg">
+            how to get started with competitive programming
+          </label>
+        </fieldset>
+
+        <div id="quest-preview" class="blockZ"
+          style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.5)), url('pics/einsteinZ.jpg') center/cover no-repeat;">
+          <h3 id="questZ-title">How does one larp</h3>
+          <p id="questZ-summary">
+            Agent path: probes expectation basics, maps a short dependency tree, and checks predictions step by step.
+          </p>
+          <ul id="questZ-steps">
+            <li>Probe: Check what you already know about larping and yourself (via questioning)</li>
+            <li>Plan: Dependency tree from full personal to larping</li>
+            <li>Teach & Practice: Predict why u're wrong in larping and teaches you in ur level of thinking
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <b>Academic Showcase Notice:</b> while LARPHarness is a fictional business however,
+        <em>LearnHarness</em> (a free, open-source AGPL-3.0 desktop app by Amos Blomqvist).
+        Sample managed service tiers, rates, and learner reviews on this site are illustrative for CMSC 110 MP1.
+      </p>
+      
+      <p>
+        Sources:
+        <a href="https://learnharness.ai/" target="_blank" rel="noopener noreferrer">LearnHarness (learnharness.ai)</a>
+        -
+        <a href="https://github.com/amosblomqvist/learnharness" target="_blank" rel="noopener noreferrer">GitHub
+          (amosblomqvist/learnharness)</a>
+        -
+        <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">Eero Alvar:
+          Agent Harness for Learning Things (YouTube)</a>
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

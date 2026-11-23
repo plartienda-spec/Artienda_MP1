@@ -1,0 +1,173 @@
+<!--
+  services.html
+  Rai Artienda (CMSC 110 - Machine Project #1)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARPHarness | Services & Rates</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Top Box (title card, & tab navigation)-->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"> <img src="pics/LarpHarness.jpg" alt="pic ni larpHarness toh"></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Services & Rates</h1>
+      <p>
+        LearnHarness itself is completely free and open source (AGPL-3.0) for personal, classroom, and commercial use
+        with zero subscription markup. The Pro and School tiers below illustrate optional managed packs and onboarding
+        support.
+      </p>
+      <div class="billing-bar">
+        <button type="button" class="btn btn-secondary" id="billing-toggle" data-billing="monthly">
+          Switch to Annual Billing (Save 20%)
+        </button>
+        <span id="billing-status">Showing Monthly Rates</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Choose a Plan</h2>
+      <div class="blockZ-grid">
+        <article class="blockZ">
+          <h3>Open Source Desktop</h3>
+          <p class="price">
+            <span class="tier-price" data-monthly="$0" data-annual="$0">$0</span>
+            <span class="tier-period">/ forever (AGPL-3.0)</span>
+          </p>
+          <ul>
+            <li>macOS, Windows & Linux desktop installers</li>
+            <li>Local persistent knowledge graph & editable prompts</li>
+            <li>Bring your own API key, ChatGPT, Copilot, Grok, or Claude Code CLI</li>
+          </ul>
+          <a class="btn btn-secondary" href="contact.html">Get Setup Guide</a>
+        </article>
+
+        <article class="blockZ blockZ-featured">
+          <h3>Pro Study Packs</h3>
+          <p class="price">
+            <span class="tier-price" data-monthly="$5" data-annual="$4">$5</span>
+            <span class="tier-period">/ month</span>
+          </p>
+          <ul>
+            <li>Everything in Open Source Desktop</li>
+            <li>Illustrative curated math, CS & physics dependency maps</li>
+            <li>Exportable session graphs & study summaries</li>
+          </ul>
+          <a class="btn btn-primary" href="contact.html">Choose Pro</a>
+        </article>
+
+        <article class="blockZ">
+          <h3>School & Team Support</h3>
+          <p class="price">
+            <span class="tier-price" data-monthly="$25" data-annual="$20">$25</span>
+            <span class="tier-period">/ month (per 10 seats)</span>
+          </p>
+          <ul>
+            <li>Shared syllabus lesson maps & custom system prompts</li>
+            <li>Guided endpoint setup & instructor onboarding</li>
+            <li>Priority email and workshop support</li>
+          </ul>
+          <a class="btn btn-secondary" href="contact.html">Inquire for Teams</a>
+        </article>
+      </div>
+    </section>
+
+    <!--Comparispon-->
+    <section class="section">
+      <h2>Itemized Feature Comparison</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Comparison of LARPHarness plans</caption>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Open Source Desktop</th>
+              <th>Pro Study Packs</th>
+              <th>School & Team Support</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Probe & Plan (dependency lesson map)</td>
+              <td>Included</td>
+              <td>Included</td>
+              <td>Included</td>
+            </tr>
+            <tr>
+              <td>Teach (predict &rarr; teach &rarr; check)</td>
+              <td>Included</td>
+              <td>Included</td>
+              <td>Included</td>
+            </tr>
+            <tr>
+              <td>Practice (adaptive problems & smallest hints)</td>
+              <td>Included</td>
+              <td>Included</td>
+              <td>Included</td>
+            </tr>
+            <tr>
+              <td>Graph (local propositions & reasoning chains)</td>
+              <td>Included</td>
+              <td>Included + export pack</td>
+              <td>Included + shared templates</td>
+            </tr>
+            <tr>
+              <td>Curated starter topic packs</td>
+              <td>Self-guided</td>
+              <td>Full pack library</td>
+              <td>Custom syllabus packs</td>
+            </tr>
+            <tr>
+              <td>Personal, classroom & commercial rights</td>
+              <td>AGPL-3.0 free</td>
+              <td>AGPL-3.0 + pack license</td>
+              <td>AGPL-3.0 + onboarding SLA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+  <p>
+        <b>Academic Showcase Notice:</b> while LARPHarness is a fictional business however,
+        <em>LearnHarness</em> (a free, open-source AGPL-3.0 desktop app by Amos Blomqvist).
+        Sample managed service tiers, rates, and learner reviews on this site are illustrative for CMSC 110 MP1.
+      </p>
+      <p class="footer-sources">
+        Sources:
+        <a href="https://learnharness.ai/" target="_blank" rel="noopener noreferrer">LearnHarness (learnharness.ai)</a>
+        -
+        <a href="https://github.com/amosblomqvist/learnharness" target="_blank" rel="noopener noreferrer">GitHub
+          (amosblomqvist/learnharness)</a>
+        -
+        <a href="https://www.youtube.com/watch?v=nfTDljFG2g0" target="_blank" rel="noopener noreferrer">Eero Alvar:
+          Agent Harness for Learning Things (YouTube)</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
