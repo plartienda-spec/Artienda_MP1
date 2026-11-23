@@ -1,16 +1,15 @@
-/*
- * File: js/main.js
- * Author: Rai Artienda (CMSC 110 - Machine Project #1)
- * Purpose: Simple, guarded client-side behavior across all 6 pages.
+/* js/main.js
+ Rai Artienda (CMSC 110 - Machine Project #1)
  */
 
-// Shared helper: safely grab an element by id (returns null if not on this page).
+//takes an element by ID
 function byId(id) {
   return document.getElementById(id);
 }
 
-// 1. Home page: swap Probe -> Plan -> Teach preview when the user picks a goal.
-function setupQuestPicker() {
+
+// Gives preview from user choice
+function questPicker() {
   var titleEl = byId("questZ-title");
   var summaryEl = byId("questZ-summary");
   var stepsEl = byId("questZ-steps");
@@ -50,6 +49,7 @@ function setupQuestPicker() {
     }
   };
 
+  //Updates the changes as per user choice
   radios.forEach(function (radio) {
     radio.addEventListener("change", function () {
       var data = quests[radio.value];
@@ -68,8 +68,8 @@ function setupQuestPicker() {
   });
 }
 
-// 2. Services page: toggle Monthly vs Annual illustrative pricing display.
-function setupBillingToggle() {
+//text toggle from  yearly to monthly vice-versa
+function billingToggle() {
   var toggleBtn = byId("billing-toggle");
   var statusEl = byId("billing-status");
   if (!toggleBtn || !statusEl) {
@@ -87,7 +87,7 @@ function setupBillingToggle() {
 
     document.querySelectorAll(".tier-period").forEach(function (periodEl, index) {
       if (index === 0) {
-        return; // Keep Open Source Desktop at "/ forever (AGPL-3.0)"
+        return; 
       }
       if (index === 1) {
         periodEl.textContent = nextMode === "annual" ? "/ month (billed yearly)" : "/ month";
@@ -105,8 +105,8 @@ function setupBillingToggle() {
   });
 }
 
-// 3. Gallery page: filter screenshots vs video cards.
-function setupGalleryFilter() {
+// Filters media type on click
+function galleryFilter() {
   var grid = byId("gallery-grid");
   var countEl = byId("gallery-count");
   var buttons = document.querySelectorAll(".filter-btn");
@@ -137,8 +137,8 @@ function setupGalleryFilter() {
   });
 }
 
-// 4. Contact page: validate inputs and show inline confirmation without page reload.
-function setupContactForm() {
+// validates input and shows confirmation
+function contactForm() {
   var form = byId("contact-form");
   var feedback = byId("form-feedback");
   if (!form || !feedback) {
@@ -165,7 +165,7 @@ function setupContactForm() {
   });
 }
 
-setupQuestPicker();
-setupBillingToggle();
-setupGalleryFilter();
-setupContactForm();
+questPicker();
+billingToggle();
+galleryFilter();
+contactForm();
